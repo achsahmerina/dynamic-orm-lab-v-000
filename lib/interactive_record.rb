@@ -19,7 +19,7 @@ class InteractiveRecord
   end
 
   def initialize(new_student={})
-    options.each do |name, grade|
+    new_student.each do |name, grade|
       self.send("#{name}=", grade)
     end
   end
@@ -28,5 +28,5 @@ class InteractiveRecord
     self.class.table_name
   end
 
-  
+
 end
