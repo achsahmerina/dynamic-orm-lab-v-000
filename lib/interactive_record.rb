@@ -57,7 +57,7 @@ class InteractiveRecord
     DB[:conn].execute(sql, name)
   end
 
-  def self.find_by(name)
+  def self.find_by(attribute)
     row = attribute.keys[0].to_s
     value = attribute.values[0]
 
