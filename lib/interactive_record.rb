@@ -19,7 +19,6 @@ class InteractiveRecord
   end
 
   def initialize(new_student={})
-    attr_accessor :name, :grade, :id
     new_student.each do |name, grade|
     self.send("#{name}=", grade)
     end
