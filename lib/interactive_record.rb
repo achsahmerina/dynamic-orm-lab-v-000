@@ -18,9 +18,9 @@ class InteractiveRecord
     names.compact
   end
 
-  def initialize(objects={})
-    objects.each do |k, v|
-      self.send("#{k}=", v)
+  def initialize(new_student={})
+    new_student.each do |name, grade|
+    self.send("#{name}=", grade)
     end
   end
 end
