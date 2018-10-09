@@ -13,8 +13,8 @@ class InteractiveRecord
     names = []
 
     columns.each do |col|
-    names << col["name"]
+    names << column["name"]
    end
-    column_names.compact
+    names.compact
   end
 end
