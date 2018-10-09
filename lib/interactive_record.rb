@@ -18,9 +18,9 @@ class InteractiveRecord
     names.compact
   end
 
-  def initialize(options={})
-      options.each do |property, value|
-        self.send("#{property}=", value)
+  def initialize(new_student={})
+      options.each do |name, grade|
+        self.send("#{name}=", grade)
       end
     end
   def table_name_for_insert(table_name)
