@@ -18,7 +18,7 @@ class InteractiveRecord
     names.compact
   end
 
-  def initialize(options={})
+  def initialize(options={}, property, value)
       options.each do |property, value|
         self.send("#{property}=", value)
       end
