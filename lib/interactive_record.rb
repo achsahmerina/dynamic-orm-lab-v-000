@@ -21,7 +21,6 @@ class InteractiveRecord
   def initialize(new_student={})
     new_student.each do |name, grade, id|
     self.send("#{name}=", grade)
-    self.create.new
     end
   end
 end
