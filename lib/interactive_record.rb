@@ -50,4 +50,5 @@ class InteractiveRecord
   end
 
   def self.find_by_name
+  end
 end
