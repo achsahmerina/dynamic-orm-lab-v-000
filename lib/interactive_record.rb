@@ -12,7 +12,7 @@ class InteractiveRecord
     columns = DB[:conn].execute("PRAGMA table_info(#{table_name})")
     names = []
 
-    table_columns.each do |col|
+    columns.each do |col|
     column_names << col["name"]
    end
     column_names.compact
