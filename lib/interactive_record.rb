@@ -17,4 +17,8 @@ class InteractiveRecord
    end
     names.compact
   end
+
+  def initialize
+    
+  end
 end
