@@ -22,4 +22,5 @@ class InteractiveRecord
     new_student.each do |name, grade|
     self.send("#{name}=", grade)
   end
+  end
 end
