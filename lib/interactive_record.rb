@@ -14,9 +14,9 @@ class InteractiveRecord
     columns = []
 
     info.each do |col|
-  columns  << col["name"]
+    columns  << col["name"]
     end
 
-    column_names.compact
+    columns .compact
   end
 end
