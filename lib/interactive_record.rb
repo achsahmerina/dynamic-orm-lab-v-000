@@ -61,7 +61,10 @@ class InteractiveRecord
     row = attribute.keys[0].to_s
     value = attribute.values[0]
 
-    sql = <<-SQL SELECT * FROM #{table_name} WHERE #{row} = ?
-      SQL
+    sql = <<-SQL
+      SELECT * FROM #{table_name} WHERE #{row} = ?
+    SQL
+
+    DB[:conn].execute(sql, value)
   end
 end
