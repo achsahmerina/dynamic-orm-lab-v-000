@@ -18,7 +18,9 @@ class InteractiveRecord
     names.compact
   end
 
-  def initialize
-    
+  def initialize(new_student = {})
+    new_student.each do |property, value|
+    self.send("#{property}=", value)
+
   end
 end
